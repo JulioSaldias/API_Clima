@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta del Clima, Pronóstico y Historial</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Consulta del Clima, Pronóstico y Historial Climático</h1>
+
+        <!-- Clima Actual -->
+        <h2>Clima Actual</h2>
+        <form id="weatherForm">
+            <label for="city">Ciudad:</label>
+            <input type="text" id="city" name="city" placeholder="Ingresa la ciudad" required>
+            <button type="submit">Consultar Clima Actual</button>
+        </form>
+
+        <div id="result"></div>
+
+        <!-- Pronóstico del Clima -->
+        <h2>Pronóstico del Clima</h2>
+        <form id="forecastForm">
+            <label for="forecastCity">Ciudad:</label>
+            <input type="text" id="forecastCity" name="forecastCity" placeholder="Ingresa la ciudad" required>
+            <button type="submit">Consultar Pronóstico</button>
+        </form>
+
+        <div id="forecastResult"></div>
+
+        <!-- Historial Climático -->
+        <h2>Historial Climático</h2>
+        <form id="historyForm">
+            <label for="historyCity">Ciudad:</label>
+            <input type="text" id="historyCity" name="historyCity" placeholder="Ingresa la ciudad" required>
+            <label for="historyDate">Fecha (YYYY-MM-DD):</label>
+            <input type="date" id="historyDate" name="historyDate" required>
+            <button type="submit">Consultar Historial Climático</button>
+        </form>
+
+        <div id="historyResult"></div>
+    </div>
+
+    <!-- Enlazar el archivo JavaScript -->
+    <script src="scripts.js"></script>
+</body>
+</html>
